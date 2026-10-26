@@ -2,7 +2,7 @@
 
 Skills that automate analysis and reporting. Each skill is one self-contained folder in `skills/`: it needs nothing else, and it remembers your answers in its own `config.md`.
 
-Skills: `analyze-data`, `daily-report`, `weekly-digest`, `explain-codebase`, `challenge-my-plan`.
+Skills: `analyze-data`, `daily-report`, `weekly-digest`, `explain-codebase`, `challenge-my-plan`, `decision-memo`, `meeting-notes`, `customer-voice`, `skill-builder`.
 
 ## Use them anywhere
 

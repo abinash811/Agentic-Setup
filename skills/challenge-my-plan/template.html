@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plan Review</title>
+<style>
+:root{--bg:#fff;--fg:#0f172a;--muted:#64748b;--card:#f8fafc;--border:#e2e8f0;--ok:#047857;--warn:#b45309;--bad:#b91c1c;--accent:#2563eb}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1220;--fg:#e5e7eb;--muted:#94a3b8;--card:#111a2e;--border:#24304a;--ok:#34d399;--warn:#fbbf24;--bad:#f87171;--accent:#60a5fa}}
+:root[data-theme="dark"]{--bg:#0b1220;--fg:#e5e7eb;--muted:#94a3b8;--card:#111a2e;--border:#24304a;--ok:#34d399;--warn:#fbbf24;--bad:#f87171;--accent:#60a5fa}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,Segoe UI,Helvetica,Arial,sans-serif}
+main{max-width:900px;margin:0 auto;padding:28px 16px 64px}
+h1{font-size:1.6rem;line-height:1.25;margin:0 0 6px}
+h2{font-size:1.15rem;margin:34px 0 10px}
+.plan{color:var(--muted);margin:0 0 18px}
+.verdict{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.box{border:1px solid var(--border);border-radius:12px;background:var(--card);padding:14px 16px}
+.box h3{margin:0 0 4px;font-size:.8rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.box p{margin:0}
+.q{border:1px solid var(--border);border-radius:12px;background:var(--card);padding:14px 16px;margin-bottom:10px}
+.q .top{display:flex;gap:10px;align-items:baseline;justify-content:space-between;flex-wrap:wrap}
+.q .n{font-weight:700;color:var(--muted)}
+.q .who{color:var(--muted);font-size:.88rem}
+.q .qq{font-weight:600;margin:4px 0}
+.q .l{color:var(--muted);font-size:.82rem}
+.q p{margin:2px 0 8px}
+.badge{font-size:.78rem;font-weight:600;padding:2px 8px;border-radius:999px;border:1px solid;white-space:nowrap}
+.s-answered,.s-solid,.s-proven,.s-small{color:var(--ok)}
+.s-partial,.s-some,.s-medium{color:var(--warn)}
+.s-gap,.s-weak,.s-guess,.s-unknown,.s-large{color:var(--bad)}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+th{color:var(--muted);font-weight:600;font-size:.85rem}
+.scroll{overflow-x:auto}
+ul{margin:0;padding-left:20px}
+.src{color:var(--muted);font-size:.85rem;margin-top:36px}
+</style>
+</head>
+<body>
+<main>
+<h1 id="title"></h1>
+<p class="plan" id="plan"></p>
+<div class="verdict" id="verdict"></div>
+<section id="room-s"><h2>Who is in the room</h2><div class="scroll"><table id="room"></table></div></section>
+<section id="q-s"><h2>The hardest questions, most damaging first</h2><div id="qs"></div></section>
+<section id="a-s"><h2>Assumptions that could sink it</h2><div class="scroll"><table id="as"></table></div></section>
+<section id="f-s"><h2>What to fix before presenting</h2><div class="scroll"><table id="fx"></table></div></section>
+<section id="st-s"><h2>Stop conditions</h2><ul id="stops"></ul></section>
+<section id="r-s"><h2>Rehearsal log</h2><div id="rh"></div></section>
+<section id="u-s"><h2>What we could not check</h2><ul id="unk"></ul></section>
+<p class="src" id="src"></p>
+</main>
+<script type="application/json" id="data">__DATA__</script>
+<script>
+(function(){
+var D=JSON.parse(document.getElementById('data').textContent);
+function $(i){return document.getElementById(i)}
+function h(t,a,x){var e=document.createElement(t);for(var k in (a||{}))e.setAttribute(k,a[k]);if(x!=null)e.textContent=x;return e}
+function clear(e){while(e.firstChild)e.removeChild(e.firstChild)}
+function sec(id,arr){$(id).style.display=(arr&&arr.length)?'':'none'}
+function badge(v){return h('span',{'class':'badge s-'+v},v)}
+function table(el,heads,rows){clear(el);var tr=h('tr');heads.forEach(function(x){tr.appendChild(h('th',{},x))});el.appendChild(tr);
+  rows.forEach(function(r){var row=h('tr');r.forEach(function(c){var td=h('td');if(c&&c.nodeType)td.appendChild(c);else td.textContent=c==null?'':c;row.appendChild(td)});el.appendChild(row)})}
+document.title=D.title;$('title').textContent=D.title;$('plan').textContent=D.plan||'';
+var v=D.verdict||{};clear($('verdict'));[['Strongest','strong'],['Weakest','weakest'],['Biggest risk','risk']].forEach(function(p){
+  if(!v[p[1]])return;var b=h('div',{'class':'box'});b.appendChild(h('h3',{},p[0]));b.appendChild(h('p',{},v[p[1]]));$('verdict').appendChild(b)});
+sec('room-s',D.room);table($('room'),['Who','What they care about'],(D.room||[]).map(function(r){return[r.who,r.cares]}));
+sec('q-s',D.questions);clear($('qs'));(D.questions||[]).forEach(function(q,i){
+  var c=h('div',{'class':'q'}),t=h('div',{'class':'top'}),l=h('span',{'class':'who'},'#'+(i+1)+' · asked by '+q.who);t.appendChild(l);t.appendChild(badge(q.status));c.appendChild(t);
+  c.appendChild(h('div',{'class':'qq'},q.question));
+  if(q.why){c.appendChild(h('div',{'class':'l'},'Why they ask'));c.appendChild(h('p',{},q.why))}
+  if(q.answer){c.appendChild(h('div',{'class':'l'},'How to answer / what to get'));c.appendChild(h('p',{},q.answer))}
+  $('qs').appendChild(c)});
+sec('a-s',D.assumptions);table($('as'),['Assumption','How proven','Cheap way to test'],(D.assumptions||[]).map(function(a){return[a.assumption,badge(a.proof),a.test]}));
+sec('f-s',D.fixes);table($('fx'),['Fix','Why','Effort'],(D.fixes||[]).map(function(f){return[f.fix,f.why,badge(f.effort)]}));
+function list(id,sid,arr){sec(sid,arr);var u=$(id);clear(u);(arr||[]).forEach(function(x){u.appendChild(h('li',{},x))})}
+list('stops','st-s',D.stops);list('unk','u-s',D.unknown);
+sec('r-s',D.rehearsal);clear($('rh'));(D.rehearsal||[]).forEach(function(r,i){
+  var c=h('div',{'class':'q'}),t=h('div',{'class':'top'});t.appendChild(h('span',{'class':'who'},'Round '+(i+1)));t.appendChild(badge(r.rating));c.appendChild(t);
+  c.appendChild(h('div',{'class':'qq'},r.question));c.appendChild(h('div',{'class':'l'},'Your answer'));c.appendChild(h('p',{},r.answer));
+  if(r.coaching){c.appendChild(h('div',{'class':'l'},'Coaching'));c.appendChild(h('p',{},r.coaching))}$('rh').appendChild(c)});
+$('src').textContent=D.sources||'';
+})();
+</script>
+</body>
+</html>

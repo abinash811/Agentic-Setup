@@ -1,0 +1,2 @@
+[acmesync.example/changelog, last entry 2025-03-10]
+2025-03-10: Added Slack connector (beta). 2025-01-20: New dashboard. 2024-11-02: Bug fixes.

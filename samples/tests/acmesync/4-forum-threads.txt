@@ -1,0 +1,4 @@
+[community.acmesync.example, Sept 2026, 3 threads]
+"Sync silently stopped for 2 days, no alert" (14 replies, several confirm, staff says fix coming)
+"Hit the 50k records cap, jobs fail with a vague error" (6 replies)
+"Support took 9 days to answer a billing question" (4 replies)

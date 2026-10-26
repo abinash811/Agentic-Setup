@@ -2,6 +2,6 @@
   "name": "agentic-setup",
   "owner": { "name": "abinash811" },
   "plugins": [
-    { "name": "pm-skills", "source": "./", "description": "analyze-data, daily-report, weekly-digest, explain-codebase, challenge-my-plan, decision-memo, meeting-notes, customer-voice, skill-builder" }
+    { "name": "pm-skills", "source": "./", "description": "analyze-data, daily-report, weekly-digest, explain-codebase, challenge-my-plan, decision-memo, meeting-notes, customer-voice, skill-builder, product-research" }
   ]
 }

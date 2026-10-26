@@ -31,6 +31,14 @@ Things to ask about when they are not already clear:
 - **Comparison:** Compared to what (last week, last year, another group, a target)?
 - **Audience:** Who will challenge it, and what will they likely push on?
 
+### 3. Always start by narrowing it down and choosing sources
+Questions come first, every time. Even if the user gives a broad request ("analyze this", "what's going on with signups?"), do not start. A broad request gives a broad, useless answer.
+- **Narrow it down in rounds.** Ask specific questions until you can say the task in one sentence and the user says yes. If the first answers are still broad, ask again.
+- **Ask about sources before touching anything.** Look at which tools, connectors and files are available in this session and list them by name: "I can see X, Y and Z. Want me to connect to or check any of these before I start? Which ones?" Never read from a tool without a yes.
+- **Two or more sources are fine.** When using several: say what each one gave you; check they match on period, definitions and IDs; if they disagree, show both numbers and ask which one is the source of truth. Never pick one silently.
+- **Read only.** Never change anything in a connected tool unless the user asks.
+- If no tools are connected, ask the user to paste or upload the data, and say what format is easiest.
+
 ## How to analyze
 
 1. **Restate the question** in one sentence and get the user to confirm it.

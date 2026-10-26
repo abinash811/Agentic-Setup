@@ -1,0 +1,7 @@
+{
+  "name": "agentic-setup",
+  "owner": { "name": "abinash811" },
+  "plugins": [
+    { "name": "pm-skills", "source": "./", "description": "analyze-data, daily-report, weekly-digest" }
+  ]
+}

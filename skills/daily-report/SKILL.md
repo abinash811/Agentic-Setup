@@ -26,10 +26,18 @@ Goal: in under two minutes of reading, tell the user what changed, what looks wr
 Things to find out, then save to `config.md`:
 - **Sources:** which files, repos, boards or dashboards to read. Name them exactly.
 - **What to cover:** which metrics, which repos, which teams.
-- **Definitions:** what each metric means. Also read the glossary in `../analyze-data/definitions.md` if it exists, and reuse those wordings.
+- **Definitions:** what each metric means. Save confirmed definitions in `config.md` so they stay the same every run.
 - **What counts as "needs attention":** exact thresholds (for example "PR open more than 5 days", "tickets up more than 25% against last week's same day").
 - **Which day to report on:** normally yesterday. Ask about weekends and holidays.
 - **Where to send it** and in what form (chat reply, file, email, Slack, doc).
+
+### 3. Always start by narrowing it down and choosing sources
+Questions come first, every time. Even if the request is broad ("give me a report"), do not start. A broad request gives a broad, useless report.
+- **Narrow it down in rounds.** Ask specific questions until you can say the task in one sentence and the user says yes. If the answers are still broad, ask again.
+- **Ask about sources before touching anything.** Look at which tools, connectors and files are available in this session and list them by name: "I can see X, Y and Z. Want me to connect to or check any of these before I start? Which ones?" Never read from a tool without a yes. Saved sources in `config.md` still need a one-line confirm on interactive runs.
+- **Two or more sources are fine.** When using several: say what each one gave you; check they match on period, definitions and IDs; if they disagree, show both numbers and ask which one is the source of truth (on a schedule, show both and flag it in "Needs your answer"). Never pick one silently.
+- **Read only.** Never change anything in a connected tool unless the user asks.
+- If no tools are connected, ask the user to paste or upload the data.
 
 ## How to build it
 

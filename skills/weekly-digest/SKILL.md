@@ -27,10 +27,18 @@ Things to find out, then save to `config.md`:
 - **Audience and purpose:** who reads it and what they decide with it.
 - **Sources and coverage:** exact files, repos, boards, dashboards.
 - **Week definition:** Monday to Sunday, or something else. Which week to report on.
-- **Definitions:** what each metric means. Also read `../analyze-data/definitions.md` if it exists and reuse those wordings.
+- **Definitions:** what each metric means. Save confirmed definitions in `config.md` so they stay the same every run.
 - **Targets or goals** to compare against, if any.
 - **What counts as a risk,** with exact thresholds.
 - **Where to send it** and in what form.
+
+### 3. Always start by narrowing it down and choosing sources
+Questions come first, every time. Even if the request is broad ("how did the week go?"), do not start. A broad request gives a broad, useless digest.
+- **Narrow it down in rounds.** Ask specific questions until you can say the task in one sentence and the user says yes. If the answers are still broad, ask again.
+- **Ask about sources before touching anything.** Look at which tools, connectors and files are available in this session and list them by name: "I can see X, Y and Z. Want me to connect to or check any of these before I start? Which ones?" Never read from a tool without a yes. Saved sources in `config.md` still need a one-line confirm on interactive runs.
+- **Two or more sources are fine.** When using several: say what each one gave you; check they match on period, definitions and IDs; if they disagree, show both numbers and ask which one is the source of truth (on a schedule, show both and flag it in "Needs your answer"). Never pick one silently.
+- **Read only.** Never change anything in a connected tool unless the user asks.
+- If no tools are connected, ask the user to paste or upload the data.
 
 ## How to build it
 

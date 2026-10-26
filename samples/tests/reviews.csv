@@ -1,0 +1,76 @@
+id,date,user,text,_truth_hidden
+50,2026-10-17,user36@mail.com,Used it once,other
+27,2026-10-21,user18@mail.com,Everything lags since the last update,slow
+30,2026-10-03,user5@mail.com,Need a way to download my data as CSV,export
+24,2026-10-23,user35@mail.com,Dashboard takes a minute to open,slow
+32,2026-10-10,user27@mail.com,Need a way to download my data as CSV,export
+33,2026-10-04,user39@mail.com,Please add export to Excel,export
+38,2026-10-01,user7@mail.com,"Love the new layout, much easier to use",praise
+16,2026-10-02,user32@mail.com,"Cannot log in, password reset email never arrives",login
+57,2026-10-18,user23@mail.com,Keeps logging me out every few minutes,login
+25,2026-10-19,user7@mail.com,Everything lags since the last update,slow
+20,2026-10-19,user35@mail.com,Dashboard takes a minute to open,slow
+41,2026-10-20,user10@mail.com,Support was fast and helpful,praise
+1,2026-10-08,user24@mail.com,Wrong amount on my invoice,billing
+71,2026-10-11,user1@mail.com,"I was charged twice this month, fix it",billing
+69,2026-10-12,user1@mail.com,"I was charged twice this month, fix it",billing
+66,2026-10-20,user1@mail.com,"I was charged twice this month, fix it",billing
+2,2026-10-20,user38@mail.com,Refund still not received after 2 weeks,billing
+68,2026-10-06,user1@mail.com,"I was charged twice this month, fix it",billing
+56,2026-10-18,user22@mail.com,"Cannot log in, password reset email never arrives",login
+61,2026-10-18,user38@mail.com,"Cannot log in, password reset email never arrives",login
+53,2026-10-18,user25@mail.com,"Cannot log in, password reset email never arrives",login
+59,2026-10-18,user18@mail.com,Login page just spins forever,login
+36,2026-10-18,user33@mail.com,Need a way to download my data as CSV,export
+47,2026-10-20,user18@mail.com,"Great product, saved us hours",praise
+9,2026-10-13,user5@mail.com,I was charged twice this month,billing
+26,2026-10-23,user14@mail.com,Everything lags since the last update,slow
+70,2026-10-06,user1@mail.com,"I was charged twice this month, fix it",billing
+10,2026-10-06,user20@mail.com,I was charged twice this month,billing
+46,2026-10-22,user7@mail.com,"Great product, saved us hours",praise
+5,2026-10-23,user35@mail.com,Refund still not received after 2 weeks,billing
+19,2026-10-14,user25@mail.com,Everything lags since the last update,slow
+23,2026-10-09,user11@mail.com,Everything lags since the last update,slow
+73,2026-10-12,user1@mail.com,"I was charged twice this month, fix it",billing
+48,2026-10-14,user16@mail.com,"Bonjour, je ne comprends pas comment ca marche",other
+43,2026-10-11,user9@mail.com,Support was fast and helpful,praise
+63,2026-10-18,user17@mail.com,Keeps logging me out every few minutes,login
+55,2026-10-18,user9@mail.com,Login page just spins forever,login
+13,2026-10-23,user26@mail.com,Keeps logging me out every few minutes,login
+75,2026-10-12,user24@mail.com,Wrong amount on my invoice,praise
+3,2026-10-03,user31@mail.com,I was charged twice this month,billing
+8,2026-10-21,user34@mail.com,Wrong amount on my invoice,billing
+52,2026-10-18,user21@mail.com,Login page just spins forever,login
+18,2026-10-25,user20@mail.com,Login page just spins forever,login
+51,2026-10-11,user27@mail.com,ok,other
+37,2026-10-08,user20@mail.com,Please add export to Excel,export
+72,2026-10-25,user1@mail.com,"I was charged twice this month, fix it",billing
+60,2026-10-18,user32@mail.com,Login page just spins forever,login
+54,2026-10-18,user38@mail.com,Login page just spins forever,login
+6,2026-10-18,user26@mail.com,Refund still not received after 2 weeks,billing
+11,2026-10-25,user18@mail.com,"Cannot log in, password reset email never arrives",login
+67,2026-10-11,user1@mail.com,"I was charged twice this month, fix it",billing
+15,2026-10-05,user7@mail.com,Keeps logging me out every few minutes,login
+62,2026-10-18,user2@mail.com,"Cannot log in, password reset email never arrives",login
+22,2026-10-08,user2@mail.com,Dashboard takes a minute to open,slow
+21,2026-10-19,user38@mail.com,Dashboard takes a minute to open,slow
+74,2026-10-12,user6@mail.com,"Great, another crash. Love waiting 5 minutes.",slow
+58,2026-10-18,user23@mail.com,Login page just spins forever,login
+7,2026-10-21,user15@mail.com,Wrong amount on my invoice,billing
+45,2026-10-17,user39@mail.com,Support was fast and helpful,praise
+64,2026-10-18,user30@mail.com,Login page just spins forever,login
+28,2026-10-10,user5@mail.com,Please add export to Excel,export
+44,2026-10-13,user30@mail.com,Support was fast and helpful,praise
+12,2026-10-16,user25@mail.com,Login page just spins forever,login
+42,2026-10-23,user22@mail.com,"Love the new layout, much easier to use",praise
+31,2026-10-14,user2@mail.com,Please add export to Excel,export
+35,2026-10-23,user22@mail.com,Would love an export button for reports,export
+29,2026-10-16,user31@mail.com,Would love an export button for reports,export
+65,2026-10-18,user38@mail.com,Keeps logging me out every few minutes,login
+40,2026-10-07,user19@mail.com,Support was fast and helpful,praise
+17,2026-10-07,user28@mail.com,Keeps logging me out every few minutes,login
+4,2026-10-09,user13@mail.com,Wrong amount on my invoice,billing
+14,2026-10-24,user29@mail.com,Login page just spins forever,login
+49,2026-10-10,user17@mail.com,Used it once,other
+39,2026-10-20,user3@mail.com,"Great product, saved us hours",praise
+34,2026-10-20,user25@mail.com,Please add export to Excel,export

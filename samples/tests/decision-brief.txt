@@ -1,0 +1,6 @@
+We need to decide on a reporting tool. Two options: build it in-house or buy VendorX.
+Build: 3 engineers for 4 months, about $90k total. Ongoing cost small.
+Buy VendorX: $40k per year, 3-year contract, so $90k over three years. Setup takes 2 weeks.
+Obviously buying is faster and cheaper, and our CEO likes VendorX. Criteria: speed (most important), cost, and "CEO happiness".
+The data team says VendorX can't handle our custom metrics, but I haven't checked that.
+Decision needed by end of month. If we do nothing the team keeps making reports by hand, about 10 hours a week.

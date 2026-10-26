@@ -1,0 +1,21 @@
+Weekly product sync, 21 Oct. Present: Priya, Sam, Ravi, Jon, Meera.
+
+Priya: Okay let's start. Churn last month was 4.2 percent, which is up from 3.1.
+Sam: Hm, I thought the number was 2.4 on the dashboard.
+Priya: We'll go with 4.2 for now, I'll check.
+Meera: On launch, I think we should delay to November 15. The onboarding emails aren't ready.
+Ravi: Fine with me. Though legal might need until the 22nd for the pricing page.
+Priya: Okay so we agreed to delay the launch to November 15.
+Ravi: Well, if legal says the 22nd then it's the 22nd.
+Priya: Let's see what legal says.
+Sam: Someone needs to update the dashboard so it matches the finance numbers.
+Priya: Yeah. I'll send the revised pricing to legal by Friday.
+Jon: We should probably look at the onboarding emails at some point.
+Meera: I think the competitor's product is just bad, honestly. Their onboarding is a mess.
+Sam: Unrelated, but Dev's performance has been really off lately, I'm worried about the review.
+Priya: Let's not get into that here.
+Ravi: Last week I was meant to share the survey results. Still haven't done that.
+Priya: Ok, can you do it this week?
+Ravi: Yes, by Wednesday.
+John: I'll talk to support about the refund complaints.
+Priya: Great. Anything else? No? Thanks everyone.

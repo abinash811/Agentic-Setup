@@ -44,6 +44,9 @@ Settle first:
    - **B (medium):** independent benchmarks with their method shown, engineering blogs by real users, issue trackers, community forums and discussion threads, third-party security audits.
    - **C (weak):** marketing pages, vendor case studies and webinars, affiliate and "top 10 tools" lists, undated or anonymous posts.
    Do not let a C source settle anything alone.
+   **Search summaries are not sources.** A search tool's summary can be wrong (one said a limit was "1 request per 600 seconds"; the page said 600 per second). Use search only to find pages, then **open the primary page** and take facts from it. If you could only read a summary, say so and tag the fact as unverified.
+   **Other vendors' pages are not evidence about the target.** A competitor's docs may be used only as a labelled comparison, never as a fact about the product being researched. Competitor and affiliate comparisons about the target are grade C.
+   **"Not stated" is a finding.** If the target's own docs do not say how something behaves (timeouts, retries, what happens at a limit), report that as a gap with a test or vendor question, not as an absence of a limit.
 2. **Check every claim,** and tag it:
    - *Documented* (stated in an A source, name it),
    - *Claimed only* (marketing, no technical backing),

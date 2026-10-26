@@ -63,7 +63,7 @@ Use this order, in plain words. Keep it short; skip a part only if it truly does
 6. **What to do next.** One to three concrete actions.
 7. **How we got here.** Source, filters, definitions, method. Enough that someone else could repeat it and get the same result.
 
-Add a small table or one chart only if it shows the point faster than words. Every chart needs a plain title that states the takeaway, labeled axes, and the group size.
+Default format: plain tables and short bullet points. No charts or visuals unless the user asks for them. If the user asks, make them; every chart needs a plain title that states the takeaway, labeled axes, and the group size.
 
 ## Do not
 - Do not guess or fill gaps with made-up numbers.

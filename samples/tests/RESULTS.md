@@ -129,8 +129,8 @@ Then (after answers): name, trigger words, output, and **three test requests** (
 
 ## Re-check after the customer-voice fix
 - Sarcasm: the new rule makes the skill read every "positive" item that also has a problem word. That finds exactly 1 item, *"Great, another crash..."*, which is then relabelled slow / negative. **Now passes.**
-- People vs items: login 22 items from 22 people-or-fewer is reported both ways (see script output in the chat); billing's 19 items include 8 from one person. **Now passes.**
-- Foreign-language and one-word items: now listed and counted ("ok", "Used it once", 1 French item). **Now passes.**
+- People vs items: now reported both ways. Login: 22 items from 16 people. Billing: 19 items from 11 people (8 of them from one person). Export 10 from 9, slow 9 from 8. **Now passes.**
+- Foreign-language and one-word items: the check found 2 of the 3 ("ok" and the French review). "Used it once" (12 characters) slipped past my length cutoff, so a fixed length limit is a weak test; the skill text says "very short", which a careful reader would apply to it. **Mostly passes.**
 
 ## Overall
 | Skill | First-turn questions | Traps caught | Changed after test |

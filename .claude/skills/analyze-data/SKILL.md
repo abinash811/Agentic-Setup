@@ -27,7 +27,7 @@ Things to ask about when they are not already clear:
 - **The decision:** What will this be used for? Who will see it? What will they decide?
 - **The question:** The one thing the user most wants to know.
 - **The data:** Where did it come from? What period does it cover? Is anything missing or filtered out? How was it collected?
-- **Definitions:** What exactly counts as each metric, group or category?
+- **Definitions (always ask, every time):** What exactly counts as each metric, group or category? First read `definitions.md` in this skill's folder. If a term is already defined there, show it and ask "still correct?". If a term is new or unclear, ask the user to define it, or propose a definition and get a yes. Once confirmed, save it to `definitions.md` so it is never argued about again and stays the same across analyses.
 - **Comparison:** Compared to what (last week, last year, another group, a target)?
 - **Audience:** Who will challenge it, and what will they likely push on?
 
@@ -49,7 +49,14 @@ Things to ask about when they are not already clear:
    - Look for other explanations (seasonality, one big customer, a launch, a data glitch, a change in how things were counted). Say which you checked and which you could not.
    - Look for evidence that goes against your own conclusion, and report it.
    - Watch for common traps: averages hiding a split, one outlier driving the result, comparing unlike groups, picking a convenient time window, small samples, and survivors only (missing the people who left).
-6. **Self-check before answering.** Imagine the toughest person in the room. List the 3 to 5 hardest questions they would ask and make sure the answer to each is in your output or clearly flagged as unknown.
+6. **Doubt surprising results first.** If a number looks too good, too bad or too neat, assume it is a mistake until proven otherwise. Re-check the data, the filters and the math, and tell the user you did.
+7. **Stress-test the conclusion.** Run the analysis again with small changes and see if the answer holds:
+   - remove the biggest outliers
+   - use a different time window
+   - use a slightly different definition
+   - split by group (region, plan, team) to see if one group is driving everything
+   Report in plain words: "The answer held in all 4 tests" or "It flips if we drop the top customer, so be careful." If it flips, say so up front and lower the confidence.
+8. **Self-check before answering.** Imagine the toughest person in the room. List the 3 to 5 hardest questions they would ask and make sure the answer to each is in your output or clearly flagged as unknown.
 
 ## How to write the output
 
@@ -57,7 +64,7 @@ Use this order, in plain words. Keep it short; skip a part only if it truly does
 
 1. **The answer.** One or two sentences with the key number.
 2. **Why / what is behind it.** The evidence, with real numbers, group sizes and examples (quotes for text data).
-3. **How sure we are.** High, medium or low, and why. What would change the answer.
+3. **How sure we are.** High, medium or low, and why. Include the stress-test results. What would change the answer.
 4. **What we could not check.** Gaps, assumptions, missing data.
 5. **Questions you may be asked.** The hard questions from step 6, each with a short answer or "we don't know yet, here is how to find out".
 6. **What to do next.** One to three concrete actions.

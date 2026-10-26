@@ -82,7 +82,7 @@ Views: Big picture (the system, its users, outside systems); Parts inside (main 
 - Seven boxes or fewer per view. If it needs more, split into two views.
 - Grid placement: `col` and `row` start at 0. Put boxes that talk to each other next to each other, so lines are short and do not cross other boxes.
 - `kind`: `outside` = people and outside systems; `part` = pieces of this system; `store` = where things are saved (databases, files, settings).
-- Arrow labels are short verbs ("sends orders", "reads settings"), never blank when the meaning is not obvious.
+- Arrow labels are short verbs, three words or fewer ("sends orders", "reads settings"), never blank when the meaning is not obvious. Longer labels get cut off.
 - Plain names first ("Stores user data"), technical name in `tech` ("PostgreSQL database").
 - `status` is `confirmed` only if you read it. Guesses are dashed in the picture.
 - The caption says what to notice, for example "Everything goes through the server; the app never talks to the database directly."
